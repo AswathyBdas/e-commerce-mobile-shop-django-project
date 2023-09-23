@@ -1,0 +1,27 @@
+from django.urls import path
+from mob import views
+urlpatterns = [
+    path('',views.index),
+    path('login',views.login),
+    path('adminhome',views.adminhome),
+    path('home',views.index),
+    path('addcompany',views.addcompany),
+    path('addproduct',views.addproduct),
+    path('viewrequest',views.viewrequest),
+    path('index',views.index),
+    path('user',views.product),
+    path('register',views.register),
+    path('details',views.details),
+    path('cart',views.cart),
+    path('search',views.search),
+    path('search2',views.search2),
+    path('userlogin',views.userlogin),
+    path('bank',views.bank),
+    path('bankhome',views.bankhome),
+    path('newaccount',views.newaccount),
+    path('deposit',views.deposit),
+    path('accountstatus',views.accountstatus),
+    path('buynow',views.buynow),
+    path('new',views.new),
+    path('filter',views.filter),
+]

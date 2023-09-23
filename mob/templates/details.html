@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Smart mobiles</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="static/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed" >
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="static/index.html">Smart Mobiles</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="static/index.html" class="logo me-auto"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar navbar-sm bg-dark fixed-top">
+        <h1 class="logo me-auto"><a href="static/index.html"><b>Smart Mobiles</b></a></h1>
+        <ul>
+
+          <li><a class="nav-link scrollto active" href="index">Home</a></li>
+          <li><a class="nav-link scrollto active" href="login">Logout</a></li>
+          <li><a class="nav-link scrollto active" href="bank">BANK</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+    <body>
+      <form method="post">
+        {% csrf_token %}
+        <div style="background-color:white;height:1500px;width:1510px;position:relative;left:1px;top:-23px">
+        <div class="container">
+            <div class="row">
+              <div class="col-ld-12 col-md-12">
+                  <center><img src="static/upload/{{data.6}}"height="290px" width="290px">
+                    <b><font color="blue"size="4px"><br><br>{{data.1}}<br>{{data.2}}<br>{{data.3}}<br><font color="green">RS.{{data.4}}</b><br><br>
+                        <input type="submit" class="btn btn-danger" name="sub2"  value="Add To Cart"><br><br>{{message}}
+                        
+
+                    </div>
+                </div>
+            </div>
+          </form>
+          
+            <form method="post" style="position:absolute;top:600px;left:200px;" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 write your comment here:<br><br>
+                 <textarea name="a" rows="8" cols="40" style="background-color:pink);"></textarea><br><br>
+                 <input type="file" class="file" name="b"><br><br>
+                 <input type="submit" class="btn btn-info" id="theButton" name="sub1" value="post comment">
+                 
+                 <p style="color:red;"></p>
+        
+            </form><br>
+            
+              
+        <center><a href="buynow"><input type="submit" class="btn btn-danger" name="sub3"  value="buynow"></a></center>
+        <center><a href="buynow">BUYNOW</a></center>
+                
+            <center><form method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+            Rating:<input type="radio" name="rate" value="1">1
+            <input type="radio" name="rate"  value="2">2
+            <input type="radio" name="rate"  value="3">3
+            <input type="radio" name="rate"  value="4">4
+            <input type="radio" name="rate"  value="5">5<br><br>
+            <input type="submit" class="btn btn-info" id="theButton" name="rat1" value="RATE">
+            </form></center><br><br><br>
+        </div> 
+        <div name="di" style="position:absolute;top: 900px;left:700px;width: 400px;overflow-y:scroll;overflow-x:hidden;">
+            {% for i in data1 %}
+            <div class="row" style="border:1px" solid blue;height:80px;">
+                <div class="row"><div class="col-md-6"></div></div>
+                <div class="row">
+                    <div class="col-md-1"><p></p></div>
+                    <div class="col-md-2"><img src="static/upload/img/{{i.5}}" width="30px" height="20px"style="border-radius:50%"></div>
+                    <div class="col-md-4"><b>{{i.1}}</b></div>
+                        <div class="col-md-4"><b>{{i.2}}</b></div>
+                        </div>
+                    <div class="row"><div class="col-md-6"><p></p></div></div>
+                    <div class="row">
+                        <div class="col-md-1"><p></p></div>
+                        <div class="col-md-9">{{i.4}}</div>
+                    </div>
+                </div>
+            
+                {% endfor %}
+                
+
+            </div></style>
+          
+
+        </body>
+        </html>

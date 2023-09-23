@@ -1,0 +1,138 @@
+{%load static%%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+
+  <title>Arsha Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="static/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link href="static/assets/css/main.css" rel="stylesheet" media="all">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="static/index.html">Smart Mobiles</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="static/index.html" class="logo me-auto"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index">Home</a></li>
+          <li><a class="nav-link scrollto" href="login">Login</a></li>
+          </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+ 
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6">
+                <div class="card-heading">
+                    <h2 class="title">REGISTER</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="name">name</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="n" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">age</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="number" name="a" required>
+                                </div>
+                            </div>
+                        </div><br>
+                        
+                        {{message}}
+                        <div class="form-row">
+                            <div class="name">email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="email" name="e" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="password" name="p" required>
+                                </div>
+                            </div>
+                        </div>
+                        {{message1}}
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn--radius-2 btn--blue-2" type="submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Jquery JS-->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+
+
+    <!-- Main JS-->
+    <script src="static/assets/js/global.js"></script></form>
+
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+  
+    
+    
+  
+</body>
+
+</html>
+  
+
+  
+  

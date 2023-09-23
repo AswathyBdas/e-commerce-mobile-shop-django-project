@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Smart mobiles</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="static/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  {% comment %} <style>
+  #d{position:relative;left:800px;top:-40px}
+  </style> {% endcomment %}
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed" >
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="static/index.html">Smart Mobiles</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="static/index.html" class="logo me-auto"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar navbar-sm bg-dark fixed-top">
+        <h1 class="logo me-auto"><a href="static/index.html"><b>Smart Mobiles</b></a></h1>
+        <ul>
+
+          <li><a class="nav-link scrollto" href="bankhome">Home</a></li>
+          <li><a class="nav-link scrollto " href="bank">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
+  <body>
+    <div style="background-color:#caf5e4;height:240px;width:500px;position:relative;left:500px;top:140px">
+        <h5 align="center">status</h5><br>
+    <form method="post">
+            {% csrf_token %}
+            <center>name:<input type="text" name="na" required></center><br><br>
+              <center>accountnumber:<input type="text" name="ac" required></center><br>
+                <center><input type="submit" value="OK" name="ok"></center>
+            </form>
+          </div></style>
+          <section class="intro">
+            <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img2.jpg');">
+              <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0,.25);">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="card bg-dark shadow-2-strong">
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table class="table table-dark table-borderless mb-0">
+                              <thead>
+                                <tr>
+                                  <th scope="col">ID</th>
+                                  <th scope="col">DATE</th>
+                                  <th scope="col">ACCOUNT FROM</th>
+                                  <th scope="col">ACCOUNT TO</th>
+                                  <th scope="col">CREDIT</th>
+                                  <th scope="col">DEBIT</th>
+                                  <th scope="col">BALANCE</th>
+                                </tr>
+                              </thead>
+                              <body>
+                                {% for i in data %}
+                                <tr>
+                                  <th scope="row">{{i.0}}</th>
+                                  <td>{{i.0}}
+                                  <td>{{i.1}}</td>
+                                  <td>{{i.}}</td>
+                                  <td>{{i.}}</td>
+                                  <td>{{i.13}}</td>
+                                  <td>{{i.12}}</td>
+                                  <td>{{i.14}}</td>
+                                  <td>{{i.15}}</td>
+                                </tr>
+                                {% endfor %}
+                                  {% comment %} <td>Edinburgh</td>
+                                  <td>$320,800</td>
+                                </tr> {% endcomment %}
+                                {% comment %} <tr>
+                                  <th scope="row">Sonya Frost</th>
+                                  <td>Software Engineer</td>
+                                  <td>sfrost34@example.com</td>
+                                  <td>23</td>
+                                  <td>Edinburgh</td>
+                                  <td>$103,600</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Jena Gaines</th>
+                                  <td>Office Manager</td>
+                                  <td>jgaines75@example.com</td>
+                                  <td>30</td>
+                                  <td>London</td>
+                                  <td>$90,560</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Quinn Flynn</th>
+                                  <td>Support Lead</td>
+                                  <td>qflyn09@example.com</td>
+                                  <td>22</td>
+                                  <td>Edinburgh</td>
+                                  <td>$342,000</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Charde Marshall</th>
+                                  <td>Regional Director</td>
+                                  <td>cmarshall28@example.com</td>
+                                  <td>36</td>
+                                  <td>San Francisco</td>
+                                  <td>$470,600</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Haley Kennedy</th>
+                                  <td>Senior Marketing Designer</td>
+                                  <td>hkennedy63@example.com</td>
+                                  <td>43</td>
+                                  <td>London</td>
+                                  <td>$313,500</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Tatyana Fitzpatrick</th>
+                                  <td>Regional Director</td>
+                                  <td>tfitzpatrick00@example.com</td>
+                                  <td>19</td>
+                                  <td>Warsaw</td>
+                                  <td>$385,750</td>
+                                </tr> {% endcomment %}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {% comment %} <img id="d"src="static/assets/img/bank.jpg" height="500px" width="600px"> {% endcomment %}
+        </body>
+
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+       companyname:<input type="text" name="cn"><br><br>
+       owner:<input type="text" name="o"><br><br>
+       <input type="submit" value="submit" name="sub">
+        </form>
+</body>
+</html>
